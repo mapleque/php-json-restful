@@ -1,10 +1,10 @@
 # php-json-restful
 这是一个基于rest规则实现的php web service框架，数据全部采用json格式，存储采用key-value形式，能够适用于大多数简单web应用场景。
 ##部署方法
--将api目录及目录下所有文件部署到php项目根目录下。
--修改DBTool.php中的数据库相关信息
--使用OneDao.php中的sql创建数据库表
--可以发请求进行测试了
+- 将api目录及目录下所有文件部署到php项目根目录下。
+- 修改DBTool.php中的数据库相关信息
+- 使用OneDao.php中的sql创建数据库表
+- 可以发请求进行测试了
 
 ##请求示例
 
