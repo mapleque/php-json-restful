@@ -48,22 +48,10 @@ index.php为代码入口，所有请求通过index.php接入后转入处理流�
     ## start ## list查询时作为第一条数据index for list 某些情况下该参数可能不传
     ## num ## list查询时作为数据列表大小 for list 某些情况下该参数可能不传
 ```
-index.php中只判断请求来源(可以添加代码输入该来源用于统计)，其他逻辑都放在controller中进行处理，具体使用哪个controller，可在RequestFilter中配置（默认使用BaseControler即可）。
-
-
-RequestFilter.php中实现了Controller的分发，并且定义了方法调用数据和整个框架的依赖。
-
-
-BaseController.php中实现了rest全部方法，并可以通过prepare方法初始化用户信息以及数据信息等。
-
-
-OneService.php是服务层逻辑的简单实现，通过调用dao层提供的方法，实现对数据的综合逻辑操作。
-
-
-OneDao.php是数据层逻辑的简单实现，本实例实现的是基于mysql的数据存储和读写。
-
-
-OneModel.php是数据Bean
-
-
-DBTool.php封装了mysqli的查询方法，用于提供mysql数据库链接及操作接口。
+- index.php中只判断请求来源(可以添加代码输入该来源用于统计)，其他逻辑都放在controller中进行处理，具体使用哪个controller，可在RequestFilter中配置（默认使用BaseControler即可）。
+- RequestFilter.php中实现了Controller的分发，并且定义了方法调用数据和整个框架的依赖。
+- BaseController.php中实现了rest全部方法，并可以通过prepare方法初始化用户信息以及数据信息等。
+- OneService.php是服务层逻辑的简单实现，通过调用dao层提供的方法，实现对数据的综合逻辑操作。
+- OneDao.php是数据层逻辑的简单实现，本实例实现的是基于mysql的数据存储和读写。
+- OneModel.php是数据Bean
+- DBTool.php封装了mysqli的查询方法，用于提供mysql数据库链接及操作接口。
